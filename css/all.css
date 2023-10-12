@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Cambio la fuente a una fuente sans-serif común */
+  color: #91ba38; /* Cambio el color de la fuente a un tono más oscuro */
+}
+
+body {
+  background: linear-gradient(135deg, hsl(230, 40%, 12%), hsl(230, 20%, 7%)); /* Aplico el fondo a la etiqueta body para que sea único */
+}
+
+.cuerpo {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1); /* Agrego un fondo semitransparente para el cuerpo */
+}
+
+/* Estilo para la imagen del logo */
+img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 20px 0;
+}
+
+/* Estilo para el título principal */
+.flick {
+  font-size: 2.5em;
+  margin: 20px 0; /* Aumento el espacio entre el título y los enlaces */
+}
+
+/* Estilo para los enlaces */
+.links {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links li {
+  margin: 15px 0; /* Aumento el espacio entre los botones de los enlaces */
+}
+
+.links li a {
+  text-decoration: none;
+  font-size: 1.5em; /* Aumento el tamaño de los enlaces */
+  color: #91ba38; /* Cambio el color de la fuente de los enlaces a un tono más oscuro */
+  background: transparent; /* Quité el color de fondo de los botones para que se mezclen con el fondo */
+  border: none; /* Quité el borde */
+  transition: color 0.3s ease, transform 0.2s ease-in-out; /* Agrego animación de transformación (escalado) */
+  cursor: pointer;
+  text-align: center;
+  width: 150px; /* Fijo el ancho de los botones para que todos tengan el mismo tamaño */
+}
+
+.links li a:hover {
+  color: #0073e6; /* Cambio el color al pasar el cursor sobre los enlaces */
+  transform: scale(10.1); /* Hago una ligera animación de escala al pasar el cursor */
+}
