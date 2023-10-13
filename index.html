@@ -17,22 +17,47 @@
             <a href="https://wa.me/34679311358">WhatsApp</a>
         </li>
     </ul>
-
+    
     <h2 class="flick">¡Nuestras Redes!</h2>
     <ul class="links">
         <li>
             <a href="https://wa.me/34679311358">WhatsApp</a>
         </li>
-        <li>
-            <a href="https://www.instagram.com/hallacavenezolana/">Instagram</a>
+        <li id="openInstagram">
+            Instagram
         </li>
-        <li>
-            <a href="https://www.facebook.com/hallacasvenezolanasenespana">FaceBook</a>
+        <li id="openFaceBook">
+            FaceBook
         </li>
-        <li>
-            <a href="https://www.tiktok.com/@hallacasvenezolanas">TikTok</a>
+        <li id="openTikTok">
+            TikTok
         </li>
     </ul>
+    <script>
+        document.getElementById('openInstagram').onclick = function() {
+            if (/Mobi/i.test(navigator.userAgent)) {
+                window.location.href = 'instagram://user?username=hallacavenezolana';
+            } else {
+                window.location.href = 'https://www.instagram.com/hallacavenezolana/';
+            }
+        };
+    
+        document.getElementById('openFaceBook').onclick = function() {
+            if (/Mobi/i.test(navigator.userAgent)) {
+                window.location.href = 'fb://page/hallacasvenezolanasenespana'; // Reemplaza 'ID_DE_PAGINA_DE_FACEBOOK' con el ID de la página de Facebook.
+            } else {
+                window.location.href = 'https://www.facebook.com/hallacasvenezolanasenespana';
+            }
+        };
+    
+        document.getElementById('openTikTok').onclick = function() {
+            if (/Mobi/i.test(navigator.userAgent)) {
+                window.location.href = 'tiktok://user?username=hallacasvenezolanas';
+            } else {
+                window.location.href = 'https://www.tiktok.com/@hallacasvenezolanas';
+            }
+        };
+    </script>
 </body>
 
 </html>

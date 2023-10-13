@@ -52,13 +52,7 @@ img {
 }
 
 .links li{
-  padding-top: 20px;
-}
-
-.links li a {
-  float: left;
-  width: 100%;
-  text-decoration: none;
+  margin-top: 20px;
   font-size: 1.5em;
   color: #181a15;
   background: transparent;
@@ -75,7 +69,16 @@ img {
     -9px -9px 18px #ffffff;
 }
 
-.links li a:hover {
+.links li a{
+  
+  float: left;
+  width: 100%;
+  color: #181a15;
+  text-decoration: none;
+
+}
+
+.links li:hover {
   color: #000; /* Cambio el color al pasar el cursor sobre los enlaces a negro */
   transform: scale(1.1);
   box-shadow: 9px 9px 18px #000; /* Cambio la sombra al pasar el cursor sobre los enlaces a negro */
